@@ -2,7 +2,7 @@
 
 ## _1. RIBs가 나온 배경._
 
-### MVC
+### MVC 아키텍처
 
 ![MVC](https://user-images.githubusercontent.com/46097621/166392396-2c5a4e50-1b46-4720-a1c1-f1a0ddf89126.png)
 
@@ -12,7 +12,7 @@
 - massive view controllers (비즈니스 로직, 데이터 변경, 데이터 검증, 네트워크 로직, 라우팅 로직)
 - 테스트가 어려운 구조 (if-else문으로 테스트)
 
-### VIPER
+### VIPER 아키텍처
 
 ![VIPER](https://user-images.githubusercontent.com/46097621/166393044-cdc64cd2-271c-47db-8c6a-8a6020d237f4.png)
 
@@ -35,11 +35,19 @@
 - View 트리와 business 트리가 밀접하게 결합되어 있어, View로직만 포함하거나 business 로직만 포함하는 노드를 구현하기 힘든 점
 - View 트리를 중심으로 앱이 진행되는 단점, View에 의해 앱 상태가 동작되는 장점 -> RIBs 트리로 보완
 
+### RIBs 아키텍처
+
+![RIBs](https://user-images.githubusercontent.com/46097621/166393616-40bb9e09-0b87-44bd-ba6f-af9898a69db4.png)
+
+- Router를 부르는 위치가 Presenter에서 Interactor로 이동
+- business logic -> Router, Interactor
+- view logic -> Presenter, View
 
 
+## 참고자료
+uber 개발자: https://eng.uber.com/new-rider-app-architecture/
 
-
-
+개념: https://github.com/uber/RIBs/wiki
 
 
 
