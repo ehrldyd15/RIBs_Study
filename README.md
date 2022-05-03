@@ -2,4 +2,4 @@
 
 ## _1. RIBs가 나온 배경._
 
-![MVC Image](https://github.com/ehrldyd15/RIBs_Study/issues/1#issue-1223535672.png)
+![MVC](https://user-images.githubusercontent.com/46097621/166392396-2c5a4e50-1b46-4720-a1c1-f1a0ddf89126.png)
